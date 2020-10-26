@@ -1,0 +1,72 @@
+----------------------------------------------------------------------------------------------------------
+
+Grid Ekleme Kullan!!!
+http://examples.ext.net/#/GridPanel/Restful/Overview/
+
+Row Editor
+http://examples.ext.net/#/GridPanel/Plugins/RowEditor/
+
+Editable GridPanel With Save To [DirectMethod]
+http://examples.ext.net/#/GridPanel/Editable/Editor_with_DirectMethod/
+----------------------------------------------------------------------------------------------------------
+
+Layout Gizle Kullan!!!
+http://examples.ext.net/#/Keys/KeyMap/BorderLayout_Regions_Toggle/
+
+----------------------------------------------------------------------------------------------------------
+
+Grid Delete Kullan!!!
+http://examples.ext.net/#/Keys/Panel_Keys/Grid_Rows_Delete/
+
+----------------------------------------------------------------------------------------------------------
+
+Grid Direkt Edit Kullan!!!
+http://examples.ext.net/#/GridPanel/Update/SqlDataSource/
+
+Grid Add Olayý
+http://examples.ext.net/#/GridPanel/Update/AutoSave/
+
+Açýlýr Grid
+http://examples.ext.net/#/GridPanel/RowExpander/Remote_Mode/
+
+----------------------------------------------------------------------------------------------------------
+
+<ext:KeyMap ID="KeyMapPanel1" runat="server" Target="#{form1}">
+		<ext:KeyBinding StopEvent="true">
+			<Keys>
+				<ext:Key Code="F5" />
+			</Keys>
+			<Listeners>
+				<Event Handler="#{GridPanel1}.reload();" />
+				Store1.reload({params: {start: PagingToolbar1.cursor, limit: PagingToolbar1.pageSize}});
+			</Listeners>
+		</ext:KeyBinding>
+	</ext:KeyMap>
+	
+----------------------------------------------------------------------------------------------------------
+
+<Items>
+<ext:ListItem Text="TÜM DÝLLER" Value="-1" />
+</Items>
+
+----------------------------------------------------------------------------------------------------------
+
+http://examples.ext.net/Examples/GridPanel/Restful/Overview/
+http://examples.ext.net/Examples/GridPanel/RowExpander/Local_Mode/
+http://examples.ext.net/Examples/GridPanel/RowExpander/Remote_Mode/
+
+----------------------------------------------------------------------------------------------------------
+
+##########################################################################################################
+
+kullanýcýlar eklenince böyle listeleme de eklenecek!
+
+http://examples.ext.net/#/DataView/Advanced/Report/
+##########################################################################################################
+
+**********************************************************************************************************
+
+HERÞEY BÝTTÝKTEN SONRA ÞABLON OLAYI GELECEK! (can alýcý nokta!)
+(PAGE) ROOTS KISMI DA DB DEN GELECEK! (can alýcý nokta!)
+
+**********************************************************************************************************
